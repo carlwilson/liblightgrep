@@ -6,8 +6,6 @@ dist: trusty
 
 before_install:
   - git submodule update --init
-  - yes | sudo add-apt-repository ppa:mapnik/boost
-  - yes | sudo add-apt-repository ppa:ubuntu-toolchain-r/test
   - sudo apt-get update
 
 install:
