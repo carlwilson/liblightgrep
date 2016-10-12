@@ -11,4 +11,4 @@ before_install:
 install:
   - sudo apt-get install -y autoconf libtool pkg-config build-essential bison libicu-dev libboost-dev libboost-program-options-dev libboost-system-dev
 
-script: $CXX --version && autoreconf -fi && ./configure --with-boost-libdir=/usr/lib/x86_64-linux-gnu && make -j4 && make install
+script: $CXX --version && autoreconf -fi && ./configure --with-boost-libdir=/usr/lib/x86_64-linux-gnu && make -j4 && sudo make install
